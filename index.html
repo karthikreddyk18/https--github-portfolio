@@ -1,10 +1,285 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth">
 <head>
-    <title>WEB PAGE</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik Reddy Kanchanakuntla | Full-Stack Developer Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            surface: '#1e293b',
+                            accent: '#38bdf8',
+                            text: '#f8fafc',
+                            muted: '#94a3b8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    <h1>KARTHIK REDDY!</h1>
-    <p>Nice to meet you.</p>
+<body class="bg-brand-dark text-brand-text font-sans antialiased selection:bg-brand-accent selection:text-brand-dark">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-brand-dark/80 backdrop-blur-md border-b border-brand-surface/50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-brand-accent">kkarthikreddy<span class="text-white">.dev</span></a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-brand-muted">
+                <a href="#about" class="hover:text-brand-accent transition-colors">About</a>
+                <a href="#skills" class="hover:text-brand-accent transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-brand-accent transition-colors">Projects</a>
+                <a href="#education" class="hover:text-brand-accent transition-colors">Education & Certs</a>
+                <a href="#contact" class="px-4 py-2 bg-brand-surface border border-brand-accent/30 rounded-md text-brand-accent hover:bg-brand-accent hover:text-brand-dark transition-all">Get in Touch</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-32 flex flex-col justify-center">
+        <div class="max-w-3xl">
+            <span class="text-brand-accent font-mono text-sm tracking-wider uppercase block mb-3">Hi, my name is</span>
+            <h1 class="text-4xl sm:text-6xl font-bold tracking-tight mb-4 text-white">Karthik Reddy Kanchanakuntla</h1>
+            <h2 class="text-2xl sm:text-4xl font-semibold text-brand-muted mb-6">I build scalable, user-centric full-stack applications.</h2>
+            <p class="text-base sm:text-lg text-brand-muted leading-relaxed mb-8">
+                Results-driven Full-Stack Web Developer with strong expertise in Data Structures & Algorithms, Java, and modern web technologies. Experienced in developing architectures using the MERN Stack and Spring Boot.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#projects" class="px-6 py-3 bg-brand-accent text-brand-dark font-semibold rounded-md shadow-lg shadow-brand-accent/10 hover:bg-brand-accent/90 transition-all">View My Projects</a>
+                <a href="https://github.com/karthikreddyk18" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-brand-surface text-brand-text font-semibold rounded-md border border-brand-surface hover:border-brand-accent/30 transition-all flex items-center gap-2">
+                    GitHub Repo
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics / Highlights Section -->
+    <section class="bg-brand-surface/40 border-y border-brand-surface/50 py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <p class="text-3xl sm:text-4xl font-bold text-brand-accent">3-Star</p>
+                <p class="text-xs sm:text-sm text-brand-muted uppercase tracking-wider mt-1">CodeChef Rating</p>
+            </div>
+            <div>
+                <p class="text-3xl sm:text-4xl font-bold text-white">300+</p>
+                <p class="text-xs sm:text-sm text-brand-muted uppercase tracking-wider mt-1">LeetCode Solved</p>
+            </div>
+            <div>
+                <p class="text-3xl sm:text-4xl font-bold text-white">4+</p>
+                <p class="text-xs sm:text-sm text-brand-muted uppercase tracking-wider mt-1">Full-Stack Apps</p>
+            </div>
+            <div>
+                <p class="text-3xl sm:text-4xl font-bold text-brand-accent">7.5</p>
+                <p class="text-xs sm:text-sm text-brand-muted uppercase tracking-wider mt-1">B.Tech CGPA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Skills Section -->
+    <section id="skills" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-12 text-white border-b border-brand-surface pb-4 flex items-center gap-3">
+            <span class="text-brand-accent font-mono text-xl">01.</span> Technical Skill Matrix
+        </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="p-6 bg-brand-surface rounded-lg border border-brand-surface/50">
+                <h3 class="text-brand-accent font-semibold mb-4">Languages</h3>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">Java</span>
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">Python</span>
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">JavaScript</span>
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">HTML / CSS</span>
+                </div>
+            </div>
+            <div class="p-6 bg-brand-surface rounded-lg border border-brand-surface/50">
+                <h3 class="text-brand-accent font-semibold mb-4">Frameworks</h3>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">React.js</span>
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">Node.js</span>
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">Express.js</span>
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">Spring Boot</span>
+                </div>
+            </div>
+            <div class="p-6 bg-brand-surface rounded-lg border border-brand-surface/50">
+                <h3 class="text-brand-accent font-semibold mb-4">Databases & Cloud</h3>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">MongoDB</span>
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">MySQL</span>
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">AWS</span>
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">Git / GitHub</span>
+                </div>
+            </div>
+            <div class="p-6 bg-brand-surface rounded-lg border border-brand-surface/50">
+                <h3 class="text-brand-accent font-semibold mb-4">Core CS Concepts</h3>
+                <div class="flex flex-wrap gap-2 text-sm">
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">DSA</span>
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">OOP</span>
+                    <span class="bg-brand-dark px-3 py-1.5 rounded text-brand-muted">REST APIs</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <h2 class="text-2xl sm:text-3xl font-bold mb-12 text-white border-b border-brand-surface pb-4 flex items-center gap-3">
+            <span class="text-brand-accent font-mono text-xl">02.</span> Projects & Implementations
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-brand-surface rounded-lg p-6 border border-brand-surface/50 flex flex-col justify-between hover:border-brand-accent/20 transition-all group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-mono tracking-wider text-brand-accent uppercase">Featured Full-Stack App</span>
+                        <div class="flex space-x-3 text-brand-muted group-hover:text-brand-accent transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Course Enrollment & Tracking System (CEPTS)</h3>
+                    <p class="text-sm text-brand-muted mb-4 leading-relaxed">
+                        Engineered a comprehensive system for managing course enrollments and monitoring academic progress through structured educational curricula. Designed system architecture and documented workflows for effective administration.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4 text-xs font-mono text-brand-accent">
+                        <span>MERN Stack</span> <span>Spring Boot</span> <span>Architecture Design</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-brand-surface rounded-lg p-6 border border-brand-surface/50 flex flex-col justify-between hover:border-brand-accent/20 transition-all group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-mono tracking-wider text-brand-accent uppercase">Cloud Architecture</span>
+                        <div class="flex space-x-3 text-brand-muted group-hover:text-brand-accent transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Full-Stack E-Commerce Platform</h3>
+                    <p class="text-sm text-brand-muted mb-4 leading-relaxed">
+                        Architected a full-stack e-commerce platform with secure authentication, authorization, and seamless online transaction handling via integrated payment gateways. Deployed directly to AWS to ensure scalability and high availability.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4 text-xs font-mono text-brand-accent">
+                        <span>React.js</span> <span>Node.js</span> <span>MongoDB</span> <span>AWS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-brand-surface rounded-lg p-6 border border-brand-surface/50 flex flex-col justify-between hover:border-brand-accent/20 transition-all group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-mono tracking-wider text-brand-accent uppercase">Backend Architecture</span>
+                        <div class="flex space-x-3 text-brand-muted group-hover:text-brand-accent transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Student Feedback System</h3>
+                    <p class="text-sm text-brand-muted mb-4 leading-relaxed">
+                        Developed a dynamic platform for collecting and managing feedback. Built scalable RESTful APIs optimized for processing concurrent user responses efficiently, alongside secure data management structures using MongoDB.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4 text-xs font-mono text-brand-accent">
+                        <span>Node.js</span> <span>Express.js</span> <span>MongoDB</span> <span>REST APIs</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-brand-surface rounded-lg p-6 border border-brand-surface/50 flex flex-col justify-between hover:border-brand-accent/20 transition-all group">
+                <div>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-xs font-mono tracking-wider text-brand-accent uppercase">Analytics & Tools</span>
+                        <div class="flex space-x-3 text-brand-muted group-hover:text-brand-accent transition-colors">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        </div>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">LeetCode Tracker App</h3>
+                    <p class="text-sm text-brand-muted mb-4 leading-relaxed">
+                        Built an internal backend tracking mechanism for managing problem-solving milestones. Implemented custom analytical profiles to visualize weak concept areas and optimize ongoing technical interview preparation pipelines.
+                    </p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-4 text-xs font-mono text-brand-accent">
+                        <span>Java</span> <span>Spring Boot</span> <span>REST APIs</span> <span>Data Metrics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 grid grid-cols-1 lg:grid-cols-3 gap-12">
+        <div class="lg:col-span-1">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-white border-b border-brand-surface pb-4 flex items-center gap-3">
+                <span class="text-brand-accent font-mono text-xl">03.</span> Education
+            </h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-lg font-bold text-white">B.Tech in Computer Science</h3>
+                    <p class="text-sm text-brand-accent">Kakatiya Institute of Technology & Science</p>
+                    <p class="text-xs text-brand-muted font-mono mt-1">2023 — 2027 | CGPA: 7.5/10</p>
+                </div>
+                <div>
+                    <h3 class="text-md font-semibold text-white">Intermediate Education</h3>
+                    <p class="text-sm text-brand-muted">Impulse Junior College</p>
+                    <p class="text-xs text-brand-muted font-mono mt-1">2021 — 2023 | Score: 91%</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="lg:col-span-2">
+            <h2 class="text-2xl sm:text-3xl font-bold mb-6 text-white border-b border-brand-surface pb-4 flex items-center gap-3">
+                Industry Credentials
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-4 bg-brand-surface/50 rounded border border-brand-surface/30">
+                    <p class="text-xs text-brand-accent font-mono">Deloitte</p>
+                    <h4 class="font-bold text-white text-sm sm:text-base">Data Analytics Simulation</h4>
+                </div>
+                <div class="p-4 bg-brand-surface/50 rounded border border-brand-surface/30">
+                    <p class="text-xs text-brand-accent font-mono">Cisco Networking Academy</p>
+                    <h4 class="font-bold text-white text-sm sm:text-base">Cybersecurity Essentials</h4>
+                </div>
+                <div class="p-4 bg-brand-surface/50 rounded border border-brand-surface/30">
+                    <p class="text-xs text-brand-accent font-mono">Amazon Web Services</p>
+                    <h4 class="font-bold text-white text-sm sm:text-base">AWS Cloud Foundations</h4>
+                </div>
+                <div class="p-4 bg-brand-surface/50 rounded border border-brand-surface/30">
+                    <p class="text-xs text-brand-accent font-mono">NPTEL</p>
+                    <h4 class="font-bold text-white text-sm sm:text-base">Java, DBMS & AI Credentials</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <footer id="contact" class="bg-brand-surface/30 border-t border-brand-surface/50 py-16 text-center">
+        <div class="max-w-3xl mx-auto px-4">
+            <h2 class="text-2xl sm:text-4xl font-bold text-white mb-4">Let's Connect</h2>
+            <p class="text-brand-muted text-sm sm:text-base mb-8 max-w-md mx-auto">
+                I am currently seeking software engineering opportunities to contribute technical expertise while continuously learning.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 text-sm font-mono mb-8">
+                <a href="mailto:karthikreddykanchanakuntla@gmail.com" class="text-brand-accent hover:underline flex items-center gap-2">
+                    karthikreddykanchanakuntla@gmail.com
+                </a>
+                <span class="text-brand-surface">|</span>
+                <a href="https://linkedin.com/in/karthik-reddy-kanchanakuntla-026a04343" target="_blank" rel="noopener noreferrer" class="text-brand-accent hover:underline">
+                    LinkedIn
+                </a>
+            </div>
+            <p class="text-xs text-brand-muted">&copy; 2026 Karthik Reddy Kanchanakuntla. Built with Tailwind CSS.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
